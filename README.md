@@ -1,2 +1,2 @@
 Hospital Management System
-##Tech Stack Used : HTML, CSS, React.js
+Tech Stack Used : HTML, CSS, React.js
