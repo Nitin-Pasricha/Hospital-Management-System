@@ -5,6 +5,9 @@ body {
   margin: 0;
   background: hsl(210, 36%, 96%);
 }
+a {
+  text-decoration: none;
+}
 .section {
   height: 80vh;
 }
@@ -56,7 +59,7 @@ header {
   letter-spacing: 0.1rem;
   font-size: 2rem;
 }
-section:nth-child(odd) {
+section:nth-child(odd):not(.Auth_login__EDvHN) {
   background-color: white;
 }
 @media screen and (min-width: 800px) {

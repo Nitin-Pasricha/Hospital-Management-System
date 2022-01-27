@@ -34,3 +34,7 @@
   background-color: var(--dark-gray);
   color: lightgray;
 }
+a {
+  text-decoration: none;
+  color: white;
+}

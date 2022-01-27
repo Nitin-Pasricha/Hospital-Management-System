@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
 import './landingPage.css'
@@ -13,15 +14,15 @@ const LandingPange = () => {
           <div className='container'>
             <h1>City Hospital</h1>
             <p>A multispeciality hospital</p>
-            <button id='log-in' className='btn'>
+            <Link to='/login' id='log-in' className='btn'>
               log in
-            </button>
+            </Link>
           </div>
         </div>
       </header>
-      {links.map((link) => {
-        const { id, text, heading } = link
-        if (link.id !== 1)
+      {links.map((Link) => {
+        const { id, text, heading } = Link
+        if (Link.id !== 1)
           return (
             <section id={text} className='section' key={id}>
               <div className='title'>

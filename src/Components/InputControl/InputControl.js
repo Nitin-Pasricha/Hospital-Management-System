@@ -4,7 +4,7 @@ import { Eye, EyeOff } from 'react-feather'
 
 import styles from './InputControl.module.css'
 
-const InputControl = ({ password, label, error, ...props, type='text' }) => {
+const InputControl = ({ password, label, error, type = 'text', ...props }) => {
   const [visible, setVisible] = useState(password ? false : true)
 
   return (
@@ -13,7 +13,7 @@ const InputControl = ({ password, label, error, ...props, type='text' }) => {
       <div className={styles.inputContainer}>
         <input
           className='basic-input'
-          type={visible ? {type} : 'password'}
+          type={visible ? { type } : 'password'}
           {...props}
         />
         {password && (

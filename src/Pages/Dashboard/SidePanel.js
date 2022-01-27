@@ -13,7 +13,7 @@ const SidePanel = () => {
     email: 'admin@cityhospital.com',
   }
   return (
-    <section className='admin-panel'>
+    <div className='admin-panel'>
       <div className='profile'>
         <img className='profile-pic' src={pic} alt='detective' />
         <article>
@@ -22,7 +22,7 @@ const SidePanel = () => {
         </article>
       </div>
       <Icons />
-    </section>
+    </div>
   )
 }
 
@@ -35,16 +35,9 @@ const Icons = () => {
       </div>
       <div className='icon'>
         <RiLoginBoxLine className='ic' />
-
-        <p
-          onClick={() => {
-            console.log('log')
-            localStorage.clear()
-            window.location.replace('/')
-          }}
-        >
-          Register Employee
-        </p>
+        <Link to='/signup'>
+          <p>Register Employee</p>
+        </Link>
       </div>
       <div className='icon'>
         <RiLogoutBoxLine className='ic' />
