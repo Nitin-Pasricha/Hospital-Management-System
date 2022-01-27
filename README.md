@@ -6,4 +6,8 @@ In all the dashboard there is featuring of searching the patients or employees w
 ## Tech Stack Used :
 HTML, CSS, Javascript
 Framework used: React.js
+Libraries used:
+React-router-dom
+react-icons
+and many others...
 In this project, pure CSS has been used...Everything has been made from scratch.
