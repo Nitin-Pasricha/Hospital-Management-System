@@ -10,3 +10,31 @@ footer p {
   letter-spacing: 0.25rem;
   margin-bottom: 0;
 }
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.top-link {
+  font-size: 1.25rem;
+  position: relative;
+  bottom: 5rem;
+  right: 1rem;
+  float: right;
+  background: hsla(182, 63%, 54%);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  color: white;
+  animation: bounce 2s ease-in-out infinite;
+  z-index: 0;
+}

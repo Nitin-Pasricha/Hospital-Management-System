@@ -8,7 +8,7 @@ import { links } from '../../data'
 const LandingPange = () => {
   return (
     <>
-      <header>
+      <header id='home'>
         <Navbar />
         <div className='banner'>
           <div className='container'>
